@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetCart</title>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+
+            <!-- Top Header -->
+            <div class="top-containt">
+
+                <div class="top-left">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3>Deliver to New York 10001</h3>
+                </div>
+
+                <ul class="top-text">
+                    <li>Track Order</li>
+                    <li>Customer Service</li>
+                    <li>Sell on NetCart</li>
+                </ul>
+
+            </div>
+
+            <!-- Middle Header -->
+            <div class="mid-containt">
+                <div class="mid-text">
+
+                    <i class="fa-solid fa-cart-shopping" id="bg-c"></i>
+                    <h4>NetCart</h4>
+
+                    <div class="search-box">
+                        <input type="search" placeholder="Search for products, brands, and more...">
+                        <button class="search-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+
+                    <ul>
+                        <li><a href="#"><i class="fa-regular fa-user"></i> Account</a></li>
+                        <li><a href="#"><i class="fa-solid fa-code-compare"></i> Compare</a></li>
+                        <li><a href="#"><i class="fa-regular fa-heart"></i> Wishlist</a></li>
+                        <li><a href="#"><i class="fa-solid fa-cart-shopping"></i> Cart</a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <!-- Navigation Menu -->
+       <nav>
+    <div class="menu-btn">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <ul class="nav-list">
+        <div class="close-btn">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <li><a href="#">All Categories</a></li>
+        <li><a href="#">Electronics</a></li>
+        <li><a href="#">Fashion</a></li>
+        <li><a href="#">Home & Kitchen</a></li>
+        <li><a href="#">Sports & Fitness</a></li>
+        <li><a href="#">Beauty</a></li>
+        <li><a href="#">Books</a></li>
+        <li>
+            <a href="#" id="Today-box">
+                <i class="fa-solid fa-box-open"></i> Today's Deals
+            </a>
+        </li>
+    </ul>
+</nav>
+
+
+        </header>
+
+        <main>
+            <div class="slider">
+
+    <div class="slide active">
+        <img src="./images/image1.jpg" alt="image1">
+        <div class="caption">
+            <h2>Summer Sale - Up to 70%</h2>
+            <h2>Off</h2>
+            <p>Shop the best deals on fashion and electronics.</p>
+            <button>Shop Now</button>
+        </div>
+    </div>
+
+    <div class="slide">
+        <img src="./images/image2.jpg" alt="image2">
+        <div class="caption">
+            <h2>Home Essentials - Best</h2>
+            <h2>Prices</h2>
+            <p>Discover the newest gadgets and electronics.</p>
+            <button>Shop Now</button>
+        </div>
+    </div>
+
+    <div class="slide">
+        <img src="./images/image3.jpg" alt="image3">
+        <div class="caption">
+            <h2>New Arrivals - Latest Tech</h2>
+            <p>Transform your home with our curated collection.</p>
+            <button>Shop Now</button>
+        </div>
+    </div>
+
+    <button class="prev" onclick="prevSlide()">❮</button>
+    <button class="next" onclick="nextSlide()">❯</button>
+
+    <div class="dots"></div>
+</div>
+
+
+        <!-- Shop by Category -->
+
+        <div class="Category">
+            <h2>Shop by Category</h2>
+            <div class="Category-itmes">
+                <div class="box Electronics">
+                    <span>📱</span>
+                    <h3>Electronics</h3>
+                </div>
+                <div class="box Fashion">
+                    <span>👗</span>
+                    <h3>Fashion</h3>
+                </div>
+                <div class="box Home">
+                    <span>🏠</span>
+                    <h3>Home</h3>
+                </div>
+                <div class="box Sports">
+                    <span>⚽</span>
+                    <h3>Sports</h3>
+                </div>
+                <div class="box Beauty">
+                    <span>💄</span>
+                    <h3>Beauty</h3>
+                </div>
+                <div class="box Books">
+                    <span>📚</span>
+                    <h3>Books</h3>
+                </div>
+                <div class="box Toys">
+                    <span>🎮</span>
+                    <h3>Toys</h3>
+                </div>
+                <div class="box Groceries">
+                    <span>🛒</span>
+                    <h3>Groceries</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lightning Deals -->
+        <div class="Lightning-Deals">
+            <div class="title-text">
+                <i class="fa-solid fa-bolt"></i>
+                <h3>Lightning Deals</h3>
+                <p>Limited time offers - Hurry up!</p>
+            </div>
+            <div class="timer">
+                <div class="time-box">
+                    <span>12</span>
+                    <p>Hours</p>
+                </div>
+
+                <div class="time-box">
+                    <span>34</span>
+                    <p>Mins</p>
+                </div>
+
+                <div class="time-box">
+                    <span>56</span>
+                    <p>Secs</p>
+                </div>
+            </div>
+            <div class="card-details">
+                <div class="card-box">
+                    <div class="left-icons">
+                        <h3 class="pers">-33%</h3>
+                        <h3 class="prime"><i class="fa-solid fa-bolt"></i>Prime</h3>
+                        <h3 class="best"><i class="fa-solid fa-medal"></i>Best</h3>
+                    </div>
+                    <div class="right-icons">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-solid fa-code-compare"></i>
+                    </div>
+                    <img src="images/box1.jpeg" alt="image1">
+                    <p>Premium Wireless Headphones With Noise Cancellation</p>
+                    <i class="fa-solid fa-star"></i>
+                    <p class="pay">$199.99 <span>$299.99</span>
+                    </p>
+                    <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                </div>
+                <div class="card-box">
+                    <div class="left-icons">
+                        <h3 class="pers">-42%</h3>
+                        <h3 class="prime"><i class="fa-solid fa-bolt"></i>Prime</h3>
+                    </div>
+                    <div class="right-icons">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-solid fa-code-compare"></i>
+                    </div>
+                    <img src="images/image2.jpg" alt="image1">
+                    <p>Premium Wireless Headphones With Noise Cancellation</p>
+                    <i class="fa-solid fa-star"></i>
+                    <p class="pay">$199.99 <span>$299.99</span>
+                    </p>
+                    <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                </div>
+                <div class="card-box">
+                    <div class="left-icons">
+                        <h3 class="pers">-62%</h3>
+                    </div>
+                    <div class="right-icons">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-solid fa-code-compare"></i>
+                    </div>
+                    <img src="images/image3.jpg" alt="image1">
+                    <p>Premium Wireless Headphones With Noise Cancellation</p>
+                    <i class="fa-solid fa-star"></i>
+                    <p class="pay">$199.99 <span>$299.99</span>
+                    </p>
+                    <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                </div>
+                <div class="card-box">
+                    <div class="left-icons">
+                        <h3 class="pers">-58%</h3>
+                        <h3 class="prime"><i class="fa-solid fa-bolt"></i>Prime</h3>
+                        <h3 class="best"><i class="fa-solid fa-medal"></i>Best</h3>
+                    </div>
+                    <div class="right-icons">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-solid fa-code-compare"></i>
+                    </div>
+                    <img src="images/box1.jpeg" alt="image1">
+                    <p>Premium Wireless Headphones With Noise Cancellation</p>
+                    <i class="fa-solid fa-star"></i>
+                    <p class="pay">$199.99 <span>$299.99</span>
+                    </p>
+                    <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                </div>
+                <div class="card-box">
+                    <div class="left-icons">
+                        <h3 class="best"><i class="fa-solid fa-medal"></i>Best</h3>
+                    </div>
+                    <div class="right-icons">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-solid fa-code-compare"></i>
+                    </div>
+                    <img src="images/box1.jpeg" alt="image1">
+                    <p>Premium Wireless Headphones With Noise Cancellation</p>
+                    <i class="fa-solid fa-star"></i>
+                    <p class="pay">$199.99 <span>$299.99</span>
+                    </p>
+                    <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Bestsellers -->
+        <div class="Bestsellers-Deals">
+            <div class="title-text">
+                <i class="fa-solid fa-medal"></i>
+                <h3>Bestsellers</h3>
+            </div>
+
+            <div class="card-details">
+                <div class="card-box">
+                    <div class="left-icons">
+                        <h3 class="pers">-33%</h3>
+                        <h3 class="prime"><i class="fa-solid fa-bolt"></i>Prime</h3>
+                        <h3 class="best"><i class="fa-solid fa-medal"></i>Best</h3>
+                    </div>
+                    <div class="right-icons">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-solid fa-code-compare"></i>
+                    </div>
+                    <img src="images/box1.jpeg" alt="image1">
+                    <p>Premium Wireless Headphones With Noise Cancellation</p>
+                    <i class="fa-solid fa-star"></i>
+                    <p class="pay">$199.99 <span>$299.99</span>
+                    </p>
+                    <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                </div>
+                <div class="card-box">
+                    <div class="left-icons">
+                        <h3 class="pers">-55%</h3>
+                        <h3 class="prime"><i class="fa-solid fa-bolt"></i>Prime</h3>
+                        <h3 class="best"><i class="fa-solid fa-medal"></i>Best</h3>
+                    </div>
+                    <div class="right-icons">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-solid fa-code-compare"></i>
+                    </div>
+                    <img src="images/image2.jpg" alt="image1">
+                    <p>Premium Wireless Headphones With Noise Cancellation</p>
+                    <i class="fa-solid fa-star"></i>
+                    <p class="pay">$199.99 <span>$299.99</span>
+                    </p>
+                    <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                </div>
+                <div class="card-box">
+                    <div class="left-icons">
+                        <h3 class="pers">-46%</h3>
+                        <h3 class="best"><i class="fa-solid fa-medal"></i>Best</h3>
+                    </div>
+                    <div class="right-icons">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-solid fa-code-compare"></i>
+                    </div>
+                    <img src="images/image3.jpg" alt="image1">
+                    <p>Premium Wireless Headphones With Noise Cancellation</p>
+                    <i class="fa-solid fa-star"></i>
+                    <p class="pay">$199.99 <span>$299.99</span>
+                    </p>
+                    <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                </div>
+                <div class="card-box">
+                    <div class="left-icons">
+                        <h3 class="pers">-66%</h3>
+                        <h3 class="prime"><i class="fa-solid fa-bolt"></i>Prime</h3>
+                    </div>
+                    <div class="right-icons">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-solid fa-code-compare"></i>
+                    </div>
+                    <img src="images/box1.jpeg" alt="image1">
+                    <p>Premium Wireless Headphones With Noise Cancellation</p>
+                    <i class="fa-solid fa-star"></i>
+                    <p class="pay">$199.99 <span>$299.99</span>
+                    </p>
+                    <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- New Arrivals -->
+
+
+        <div class="New-Arrivals">
+            <div class="title-text">
+                <i class="fa-solid fa-arrow-trend-up"></i>
+                <h3>New Arrivals </h3>
+            </div>
+
+            <div class="card-details">
+                <div class="card-box">
+                    <div class="left-icons">
+                        <h3 class="pers">-33%</h3>
+                        <h3 class="new"> <i class="fa-solid fa-arrow-trend-up"></i>New</h3>
+                    </div>
+                    <div class="right-icons">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-solid fa-code-compare"></i>
+                    </div>
+                    <img src="images/box1.jpeg" alt="image1">
+                    <p>Premium Wireless Headphones With Noise Cancellation</p>
+                    <i class="fa-solid fa-star"></i>
+                    <p class="pay">$199.99 <span>$299.99</span>
+                    </p>
+                    <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                </div>
+                <div class="card-box">
+                    <div class="left-icons">
+                        <h3 class="pers">-55%</h3>
+                        <h3 class="new"> <i class="fa-solid fa-arrow-trend-up"></i>New</h3>
+                    </div>
+                    <div class="right-icons">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-solid fa-code-compare"></i>
+                    </div>
+                    <img src="images/image2.jpg" alt="image1">
+                    <p>Premium Wireless Headphones With Noise Cancellation</p>
+                    <i class="fa-solid fa-star"></i>
+                    <p class="pay">$199.99 <span>$299.99</span>
+                    </p>
+                    <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                </div>
+                <div class="card-box">
+                    <div class="left-icons">
+                        <h3 class="pers">-46%</h3>
+                        <h3 class="new"> <i class="fa-solid fa-arrow-trend-up"></i>New</h3>
+                    </div>
+                    <div class="right-icons">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-solid fa-code-compare"></i>
+                    </div>
+                    <img src="images/image3.jpg" alt="image1">
+                    <p>Premium Wireless Headphones With Noise Cancellation</p>
+                    <i class="fa-solid fa-star"></i>
+                    <p class="pay">$199.99 <span>$299.99</span>
+                    </p>
+                    <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                </div>
+                <div class="card-box">
+                    <div class="left-icons">
+                        <h3 class="pers">-66%</h3>
+                        <h3 class="new"> <i class="fa-solid fa-arrow-trend-up"></i>New</h3>
+                    </div>
+                    <div class="right-icons">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-solid fa-code-compare"></i>
+                    </div>
+                    <img src="images/box1.jpeg" alt="image1">
+                    <p>Premium Wireless Headphones With Noise Cancellation</p>
+                    <i class="fa-solid fa-star"></i>
+                    <p class="pay">$199.99 <span>$299.99</span>
+                    </p>
+                    <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+
+                </div>
+                 <div class="card-box">
+                    <div class="left-icons">
+                        <h3 class="pers">-55%</h3>
+                        <h3 class="new"> <i class="fa-solid fa-arrow-trend-up"></i>New</h3>
+                    </div>
+                    <div class="right-icons">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-solid fa-code-compare"></i>
+                    </div>
+                    <img src="images/image2.jpg" alt="image1">
+                    <p>Premium Wireless Headphones With Noise Cancellation</p>
+                    <i class="fa-solid fa-star"></i>
+                    <p class="pay">$199.99 <span>$299.99</span>
+                    </p>
+                    <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Refer & Earn  NetCart Premium -->
+
+        <div class="refer-premium-box">
+            <div class="refer">
+                <i class="fa-solid fa-gift"></i>
+                <h2>Refer & Earn</h2>
+                <p>Get $10 for every friend you refer</p>
+                <button type="submit" id="btn">Invite Friends</button>
+            </div>
+            <div class="premium">
+               <i class="fa-regular fa-star"></i>
+                <h2>NetCart Premium</h2>
+                <p>Get $10 for every friend you refer</p>
+                <button type="submit" id="btn">Join Now</button>
+            </div>
+        </div>
+
+        <!-- facility -->
+
+        <div class="facility">
+            <div class="facility-itmes">
+                <span>📦</span>
+                <h3>Free Shipping</h3>
+                <p>On orders over $50</p>
+            </div>
+            <div class="facility-itmes">
+               <span>🔒</span>
+                <h3>Secure Payment</h3>
+                <p>100% secure transactions</p>
+            </div>
+            <div class="facility-itmes">
+                <span>↩️</span>
+                <h3>Easy Returns</h3>
+                <p>30-day return policy</p>
+            </div>
+            <div class="facility-itmes">
+                <span>💬</span>
+                <h3>24/7 Support</h3>
+                <p>Always here to help</p>
+            </div>
+        </div>
+        
+        
+        <!-- Footer sections -->
+       <footer>
+    <div class="footer-items">
+
+        <!-- 1st Column -->
+        <div class="first-item">
+            <h3>ABOUT</h3>
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Corporate Information</a></li>
+            </ul>
+        </div>
+
+        <!-- 2nd Column -->
+        <div class="second-item">
+            <h3>HELP</h3>
+            <ul>
+                <li><a href="#">Payments</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Cancellation</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+
+        <!-- 3rd Column -->
+        <div class="third-item">
+            <h3>POLICY</h3>
+            <ul>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Sitemap</a></li>
+            </ul>
+        </div>
+
+        <!-- 4th Column -->
+        <div class="fore-item">
+            <h3>FOLLOW US</h3>
+            <ul>
+                <li>
+                    <a href="#" class="social-icons"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-icons"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="social-icons"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-icons"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+            </ul>
+
+            <h4>Subscribe Newsletter</h4>
+            <input type="email" placeholder="Enter Email">
+            <button id="btn">Submit</button>
+        </div>
+
+    </div>
+
+    <div class="footer-about">
+        © 2025 NetCart. All Rights Reserved.
+    </div>
+</footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
