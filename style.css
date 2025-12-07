@@ -890,6 +890,7 @@ footer .footer-about {
 }
 
 /* Right action icons */
+
 .card-box .right-icons {
   position: absolute;
   right: 10px;
@@ -909,6 +910,7 @@ footer .footer-about {
   text-align: center;
   line-height: 35px;
   border-radius: 50%;
+  background: rgba(0,0,0,0.25);
 }
 .card-box .right-icons i:nth-child(1):hover {
   transform: scale(1.1);
