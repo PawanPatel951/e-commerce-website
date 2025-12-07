@@ -15,7 +15,7 @@
 <body>
     <div class="container">
 
-        <header>
+        <header class="header">
 
             <!-- Top Header -->
             <div class="top-containt">
@@ -90,33 +90,44 @@
             <div class="slider">
 
                 <div class="slide active">
-                    <img src="./images/image1.jpg" alt="image1">
+                    <img src="./images/sale.jpg" alt="image1">
                     <div class="caption">
                         <h2>Summer Sale - Up to 70%</h2>
                         <h2>Off</h2>
                         <p>Shop the best deals on fashion and electronics.</p>
-                        <button>Shop Now</button>
+                        <button id="btns">Shop Now</button>
                     </div>
                 </div>
 
                 <div class="slide">
-                    <img src="./images/image2.jpg" alt="image2">
+                    <img src="./images/Home-Essentials.jpg" alt="image2">
                     <div class="caption">
                         <h2>Home Essentials - Best</h2>
                         <h2>Prices</h2>
                         <p>Discover the newest gadgets and electronics.</p>
-                        <button>Shop Now</button>
+                        <button id="btns">Shop Now</button>
                     </div>
                 </div>
 
                 <div class="slide">
-                    <img src="./images/image3.jpg" alt="image3">
+                    <img src="./images/New-Arrivals.webp" alt="image3">
                     <div class="caption">
                         <h2>New Arrivals - Latest Tech</h2>
                         <p>Transform your home with our curated collection.</p>
-                        <button>Shop Now</button>
+                        <button id="btns">Shop Now</button>
                     </div>
                 </div>
+                <div class="slide">
+                    <img src="./images/iphones-slider.jpg" alt="Electronics Sale">
+                    <div class="caption">
+                        <h2>Electronics Mega</h2>
+                        <h2>Sale - 60% OFF</h2>
+                        <p>Latest smartphones, laptops & smart home devices at unbeatable prices.</p>
+                        <button id="btns">Shop Now</button>
+                    </div>
+                </div>
+
+               
 
                 <button class="prev" onclick="prevSlide()">❮</button>
                 <button class="next" onclick="nextSlide()">❯</button>
@@ -165,316 +176,316 @@
                 </div>
             </div>
 
-                <!-- Lightning Deals -->
-                <div class="Lightning-Deals">
-                    <div class="title-text">
-                        <i class="fa-solid fa-bolt"></i>
-                        <h3>Lightning Deals</h3>
-                        <p>Limited time offers - Hurry up!</p>
-                    </div>
-                    <div class="timer">
-                        <div class="time-box">
-                            <span>12</span>
-                            <p>Hours</p>
-                        </div>
-
-                        <div class="time-box">
-                            <span>34</span>
-                            <p>Mins</p>
-                        </div>
-
-                        <div class="time-box">
-                            <span>56</span>
-                            <p>Secs</p>
-                        </div>
-                    </div>
-                    <div class="card-details">
-                        <div class="card-box">
-                            <div class="left-icons">
-                                <h3 class="pers">-33%</h3>
-                                <h3 class="prime"><i class="fa-solid fa-bolt"></i>Prime</h3>
-                                <h3 class="best"><i class="fa-solid fa-medal"></i>Best</h3>
-                            </div>
-                            <div class="right-icons">
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-regular fa-eye"></i>
-                                <i class="fa-solid fa-code-compare"></i>
-                            </div>
-                            <img src="images/box1.jpeg" alt="Wireless headphones">
-                            <p>Premium Wireless Headphones with Deep Bass</p>
-                            <i class="fa-solid fa-star"></i>
-                            <p class="pay">$149.99 <span>$224.99</span></p>
-                            <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
-                        </div>
-
-                        <div class="card-box">
-                            <div class="left-icons">
-                                <h3 class="pers">-42%</h3>
-                                <h3 class="prime"><i class="fa-solid fa-bolt"></i>Prime</h3>
-                            </div>
-                            <div class="right-icons">
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-regular fa-eye"></i>
-                                <i class="fa-solid fa-code-compare"></i>
-                            </div>
-                            <img src="images/img2.jpg" alt="Smartwatch">
-                            <p>Smartwatch with Heart Rate & Sleep Tracking</p>
-                            <i class="fa-solid fa-star"></i>
-                            <p class="pay">$89.99 <span>$154.99</span></p>
-                            <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
-                        </div>
-
-                        <div class="card-box">
-                            <div class="left-icons">
-                                <h3 class="pers">-62%</h3>
-                            </div>
-                            <div class="right-icons">
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-regular fa-eye"></i>
-                                <i class="fa-solid fa-code-compare"></i>
-                            </div>
-                            <img src="images/speaker.webp" alt="Bluetooth speaker">
-                            <p>Portable Bluetooth Speaker with 12h Battery</p>
-                            <i class="fa-solid fa-star"></i>
-                            <p class="pay">$39.99 <span>$104.99</span></p>
-                            <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
-                        </div>
-
-                        <div class="card-box">
-                            <div class="left-icons">
-                                <h3 class="pers">-58%</h3>
-                                <h3 class="prime"><i class="fa-solid fa-bolt"></i>Prime</h3>
-                                <h3 class="best"><i class="fa-solid fa-medal"></i>Best</h3>
-                            </div>
-                            <div class="right-icons">
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-regular fa-eye"></i>
-                                <i class="fa-solid fa-code-compare"></i>
-                            </div>
-                            <img src="images/mouse.png" alt="Gaming mouse">
-                            <p>Ergonomic Gaming Mouse with RGB Lighting</p>
-                            <i class="fa-solid fa-star"></i>
-                            <p class="pay">$24.99 <span>$59.99</span></p>
-                            <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
-                        </div>
-
-                        <div class="card-box">
-                            <div class="left-icons">
-                                <h3 class="best"><i class="fa-solid fa-medal"></i>Best</h3>
-                            </div>
-                            <div class="right-icons">
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-regular fa-eye"></i>
-                                <i class="fa-solid fa-code-compare"></i>
-                            </div>
-                            <img src="images/leptop-stand.jpg" alt="Laptop stand">
-                            <p>Adjustable Aluminum Laptop Stand for Desks</p>
-                            <i class="fa-solid fa-star"></i>
-                            <p class="pay">$29.99 <span>$49.99</span></p>
-                            <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
-                        </div>
-                    </div>
-
+            <!-- Lightning Deals -->
+            <div class="Lightning-Deals">
+                <div class="title-text">
+                    <i class="fa-solid fa-bolt"></i>
+                    <h3>Lightning Deals</h3>
+                    <p>Limited time offers - Hurry up!</p>
                 </div>
-
-
-                <!-- Bestsellers -->
-                <div class="Bestsellers-Deals">
-                    <div class="title-text">
-                        <i class="fa-solid fa-medal"></i>
-                        <h3>Bestsellers</h3>
+                <div class="timer">
+                    <div class="time-box">
+                        <span>12</span>
+                        <p>Hours</p>
                     </div>
 
-                    <div class="card-details">
-                        <div class="card-box">
-                            <div class="left-icons">
-                                <h3 class="pers">-33%</h3>
-                                <h3 class="prime"><i class="fa-solid fa-bolt"></i>Prime</h3>
-                                <h3 class="best"><i class="fa-solid fa-medal"></i>Best</h3>
-                            </div>
-                            <div class="right-icons">
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-regular fa-eye"></i>
-                                <i class="fa-solid fa-code-compare"></i>
-                            </div>
-                            <img src="images/headphone.png" alt="Wireless headphones">
-                            <p>Wireless Noise-Cancelling Headphones Pro</p>
-                            <i class="fa-solid fa-star"></i>
-                            <p class="pay">$129.99 <span>$199.99</span></p>
-                            <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
-                        </div>
-
-                        <div class="card-box">
-                            <div class="left-icons">
-                                <h3 class="pers">-55%</h3>
-                                <h3 class="prime"><i class="fa-solid fa-bolt"></i>Prime</h3>
-                                <h3 class="best"><i class="fa-solid fa-medal"></i>Best</h3>
-                            </div>
-                            <div class="right-icons">
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-regular fa-eye"></i>
-                                <i class="fa-solid fa-code-compare"></i>
-                            </div>
-                            <img src="images/watch.png" alt="Smartwatch">
-                            <p>Smart Fitness Watch with GPS Tracking</p>
-                            <i class="fa-solid fa-star"></i>
-                            <p class="pay">$79.99 <span>$179.99</span></p>
-                            <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
-                        </div>
-
-                        <div class="card-box">
-                            <div class="left-icons">
-                                <h3 class="pers">-46%</h3>
-                                <h3 class="best"><i class="fa-solid fa-medal"></i>Best</h3>
-                            </div>
-                            <div class="right-icons">
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-regular fa-eye"></i>
-                                <i class="fa-solid fa-code-compare"></i>
-                            </div>
-                            <img src="images/water-speaker.jpg" alt="Bluetooth speaker">
-                            <p>Portable Bluetooth Speaker 20W Waterproof</p>
-                            <i class="fa-solid fa-star"></i>
-                            <p class="pay">$49.99 <span>$92.99</span></p>
-                            <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
-                        </div>
-
-                        <div class="card-box">
-                            <div class="left-icons">
-                                <h3 class="pers">-66%</h3>
-                                <h3 class="prime"><i class="fa-solid fa-bolt"></i>Prime</h3>
-                            </div>
-                            <div class="right-icons">
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-regular fa-eye"></i>
-                                <i class="fa-solid fa-code-compare"></i>
-                            </div>
-                            <img src="images/keyboard.png" alt="Gaming keyboard">
-                            <p>RGB Mechanical Gaming Keyboard 60%</p>
-                            <i class="fa-solid fa-star"></i>
-                            <p class="pay">$59.99 <span>$179.99</span></p>
-                            <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
-                        </div>
-
-                        <!-- 5th card added -->
-                        <div class="card-box">
-                            <div class="left-icons">
-                                <h3 class="pers">-25%</h3>
-                                <h3 class="prime"><i class="fa-solid fa-bolt"></i>Prime</h3>
-                            </div>
-                            <div class="right-icons">
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-regular fa-eye"></i>
-                                <i class="fa-solid fa-code-compare"></i>
-                            </div>
-                            <img src="images/bluetooth.png" alt="Wireless earbuds">
-                            <p>True Wireless Earbuds with Charging Case</p>
-                            <i class="fa-solid fa-star"></i>
-                            <p class="pay">$34.99 <span>$46.99</span></p>
-                            <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
-                        </div>
+                    <div class="time-box">
+                        <span>34</span>
+                        <p>Mins</p>
                     </div>
 
-                </div>
-
-
-
-
-                <!-- New Arrivals -->
-
-                <div class="New-Arrivals">
-                    <div class="title-text">
-                        <i class="fa-solid fa-arrow-trend-up"></i>
-                        <h3>New Arrivals</h3>
-                    </div>
-
-                    <div class="card-details">
-                        <div class="card-box">
-                            <div class="left-icons">
-                                <h3 class="pers">-33%</h3>
-                                <h3 class="new"><i class="fa-solid fa-arrow-trend-up"></i>New</h3>
-                            </div>
-                            <div class="right-icons">
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-regular fa-eye"></i>
-                                <i class="fa-solid fa-code-compare"></i>
-                            </div>
-                            <img src="images/dell-g15.jpg" alt="Laptop">
-                            <p>Ultra Slim Gaming Laptop 16GB RAM</p>
-                            <i class="fa-solid fa-star"></i>
-                            <p class="pay">$899.99 <span>$1,299.99</span></p>
-                            <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
-                        </div>
-
-                        <div class="card-box">
-                            <div class="left-icons">
-                                <h3 class="pers">-55%</h3>
-                                <h3 class="new"><i class="fa-solid fa-arrow-trend-up"></i>New</h3>
-                            </div>
-                            <div class="right-icons">
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-regular fa-eye"></i>
-                                <i class="fa-solid fa-code-compare"></i>
-                            </div>
-                            <img src="images/iphone.jpg" alt="Smartphone">
-                            <p>5G Android Smartphone 128GB Storage</p>
-                            <i class="fa-solid fa-star"></i>
-                            <p class="pay">$349.99 <span>$779.99</span></p>
-                            <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
-                        </div>
-
-                        <div class="card-box">
-                            <div class="left-icons">
-                                <h3 class="pers">-46%</h3>
-                                <h3 class="new"><i class="fa-solid fa-arrow-trend-up"></i>New</h3>
-                            </div>
-                            <div class="right-icons">
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-regular fa-eye"></i>
-                                <i class="fa-solid fa-code-compare"></i>
-                            </div>
-                            <img src="images/tablet.jpg" alt="Tablet">
-                            <p>10.5" WiFi Tablet with Stylus Pen</p>
-                            <i class="fa-solid fa-star"></i>
-                            <p class="pay">$199.99 <span>$369.99</span></p>
-                            <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
-                        </div>
-
-                        <div class="card-box">
-                            <div class="left-icons">
-                                <h3 class="pers">-66%</h3>
-                                <h3 class="new"><i class="fa-solid fa-arrow-trend-up"></i>New</h3>
-                            </div>
-                            <div class="right-icons">
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-regular fa-eye"></i>
-                                <i class="fa-solid fa-code-compare"></i>
-                            </div>
-                            <img src="images/curve-tv.jpg" alt="Monitor">
-                            <p>27" 4K Curved Gaming Monitor</p>
-                            <i class="fa-solid fa-star"></i>
-                            <p class="pay">$249.99 <span>$749.99</span></p>
-                            <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
-                        </div>
-
-                        <div class="card-box">
-                            <div class="left-icons">
-                                <h3 class="pers">-55%</h3>
-                                <h3 class="new"><i class="fa-solid fa-arrow-trend-up"></i>New</h3>
-                            </div>
-                            <div class="right-icons">
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-regular fa-eye"></i>
-                                <i class="fa-solid fa-code-compare"></i>
-                            </div>
-                            <img src="images/drone.webp" alt="Drone">
-                            <p>4K Camera Drone with GPS Tracking</p>
-                            <i class="fa-solid fa-star"></i>
-                            <p class="pay">$179.99 <span>$399.99</span></p>
-                            <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
-                        </div>
+                    <div class="time-box">
+                        <span>56</span>
+                        <p>Secs</p>
                     </div>
                 </div>
+                <div class="card-details">
+                    <div class="card-box">
+                        <div class="left-icons">
+                            <h3 class="pers">-33%</h3>
+                            <h3 class="prime"><i class="fa-solid fa-bolt"></i>Prime</h3>
+                            <h3 class="best"><i class="fa-solid fa-medal"></i>Best</h3>
+                        </div>
+                        <div class="right-icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </div>
+                        <img src="images/box1.jpeg" alt="Wireless headphones">
+                        <p>Premium Wireless Headphones with Deep Bass</p>
+                        <i class="fa-solid fa-star"></i>
+                        <p class="pay">$149.99 <span>$224.99</span></p>
+                        <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                    </div>
+
+                    <div class="card-box">
+                        <div class="left-icons">
+                            <h3 class="pers">-42%</h3>
+                            <h3 class="prime"><i class="fa-solid fa-bolt"></i>Prime</h3>
+                        </div>
+                        <div class="right-icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </div>
+                        <img src="images/img2.jpg" alt="Smartwatch">
+                        <p>Smartwatch with Heart Rate & Sleep Tracking</p>
+                        <i class="fa-solid fa-star"></i>
+                        <p class="pay">$89.99 <span>$154.99</span></p>
+                        <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                    </div>
+
+                    <div class="card-box">
+                        <div class="left-icons">
+                            <h3 class="pers">-62%</h3>
+                        </div>
+                        <div class="right-icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </div>
+                        <img src="images/speaker.webp" alt="Bluetooth speaker">
+                        <p>Portable Bluetooth Speaker with 12h Battery</p>
+                        <i class="fa-solid fa-star"></i>
+                        <p class="pay">$39.99 <span>$104.99</span></p>
+                        <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                    </div>
+
+                    <div class="card-box">
+                        <div class="left-icons">
+                            <h3 class="pers">-58%</h3>
+                            <h3 class="prime"><i class="fa-solid fa-bolt"></i>Prime</h3>
+                            <h3 class="best"><i class="fa-solid fa-medal"></i>Best</h3>
+                        </div>
+                        <div class="right-icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </div>
+                        <img src="images/mouse.png" alt="Gaming mouse">
+                        <p>Ergonomic Gaming Mouse with RGB Lighting</p>
+                        <i class="fa-solid fa-star"></i>
+                        <p class="pay">$24.99 <span>$59.99</span></p>
+                        <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                    </div>
+
+                    <div class="card-box">
+                        <div class="left-icons">
+                            <h3 class="best"><i class="fa-solid fa-medal"></i>Best</h3>
+                        </div>
+                        <div class="right-icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </div>
+                        <img src="images/leptop-stand.jpg" alt="Laptop stand">
+                        <p>Adjustable Aluminum Laptop Stand for Desks</p>
+                        <i class="fa-solid fa-star"></i>
+                        <p class="pay">$29.99 <span>$49.99</span></p>
+                        <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Bestsellers -->
+            <div class="Bestsellers-Deals">
+                <div class="title-text">
+                    <i class="fa-solid fa-medal"></i>
+                    <h3>Bestsellers</h3>
+                </div>
+
+                <div class="card-details">
+                    <div class="card-box">
+                        <div class="left-icons">
+                            <h3 class="pers">-33%</h3>
+                            <h3 class="prime"><i class="fa-solid fa-bolt"></i>Prime</h3>
+                            <h3 class="best"><i class="fa-solid fa-medal"></i>Best</h3>
+                        </div>
+                        <div class="right-icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </div>
+                        <img src="images/headphone.png" alt="Wireless headphones">
+                        <p>Wireless Noise-Cancelling Headphones Pro</p>
+                        <i class="fa-solid fa-star"></i>
+                        <p class="pay">$129.99 <span>$199.99</span></p>
+                        <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                    </div>
+
+                    <div class="card-box">
+                        <div class="left-icons">
+                            <h3 class="pers">-55%</h3>
+                            <h3 class="prime"><i class="fa-solid fa-bolt"></i>Prime</h3>
+                            <h3 class="best"><i class="fa-solid fa-medal"></i>Best</h3>
+                        </div>
+                        <div class="right-icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </div>
+                        <img src="images/watch.png" alt="Smartwatch">
+                        <p>Smart Fitness Watch with GPS Tracking</p>
+                        <i class="fa-solid fa-star"></i>
+                        <p class="pay">$79.99 <span>$179.99</span></p>
+                        <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                    </div>
+
+                    <div class="card-box">
+                        <div class="left-icons">
+                            <h3 class="pers">-46%</h3>
+                            <h3 class="best"><i class="fa-solid fa-medal"></i>Best</h3>
+                        </div>
+                        <div class="right-icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </div>
+                        <img src="images/water-speaker.jpg" alt="Bluetooth speaker">
+                        <p>Portable Bluetooth Speaker 20W Waterproof</p>
+                        <i class="fa-solid fa-star"></i>
+                        <p class="pay">$49.99 <span>$92.99</span></p>
+                        <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                    </div>
+
+                    <div class="card-box">
+                        <div class="left-icons">
+                            <h3 class="pers">-66%</h3>
+                            <h3 class="prime"><i class="fa-solid fa-bolt"></i>Prime</h3>
+                        </div>
+                        <div class="right-icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </div>
+                        <img src="images/keyboard.png" alt="Gaming keyboard">
+                        <p>RGB Mechanical Gaming Keyboard 60%</p>
+                        <i class="fa-solid fa-star"></i>
+                        <p class="pay">$59.99 <span>$179.99</span></p>
+                        <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                    </div>
+
+                    <!-- 5th card added -->
+                    <div class="card-box">
+                        <div class="left-icons">
+                            <h3 class="pers">-25%</h3>
+                            <h3 class="prime"><i class="fa-solid fa-bolt"></i>Prime</h3>
+                        </div>
+                        <div class="right-icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </div>
+                        <img src="images/bluetooth.png" alt="Wireless earbuds">
+                        <p>True Wireless Earbuds with Charging Case</p>
+                        <i class="fa-solid fa-star"></i>
+                        <p class="pay">$34.99 <span>$46.99</span></p>
+                        <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <!-- New Arrivals -->
+
+            <div class="New-Arrivals">
+                <div class="title-text">
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                    <h3>New Arrivals</h3>
+                </div>
+
+                <div class="card-details">
+                    <div class="card-box">
+                        <div class="left-icons">
+                            <h3 class="pers">-33%</h3>
+                            <h3 class="new"><i class="fa-solid fa-arrow-trend-up"></i>New</h3>
+                        </div>
+                        <div class="right-icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </div>
+                        <img src="images/dell-g15.jpg" alt="Laptop">
+                        <p>Ultra Slim Gaming Laptop 16GB RAM</p>
+                        <i class="fa-solid fa-star"></i>
+                        <p class="pay">$899.99 <span>$1,299.99</span></p>
+                        <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                    </div>
+
+                    <div class="card-box">
+                        <div class="left-icons">
+                            <h3 class="pers">-55%</h3>
+                            <h3 class="new"><i class="fa-solid fa-arrow-trend-up"></i>New</h3>
+                        </div>
+                        <div class="right-icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </div>
+                        <img src="images/iphone.jpg" alt="Smartphone">
+                        <p>5G Android Smartphone 128GB Storage</p>
+                        <i class="fa-solid fa-star"></i>
+                        <p class="pay">$349.99 <span>$779.99</span></p>
+                        <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                    </div>
+
+                    <div class="card-box">
+                        <div class="left-icons">
+                            <h3 class="pers">-46%</h3>
+                            <h3 class="new"><i class="fa-solid fa-arrow-trend-up"></i>New</h3>
+                        </div>
+                        <div class="right-icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </div>
+                        <img src="images/tablet.jpg" alt="Tablet">
+                        <p>10.5" WiFi Tablet with Stylus Pen</p>
+                        <i class="fa-solid fa-star"></i>
+                        <p class="pay">$199.99 <span>$369.99</span></p>
+                        <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                    </div>
+
+                    <div class="card-box">
+                        <div class="left-icons">
+                            <h3 class="pers">-66%</h3>
+                            <h3 class="new"><i class="fa-solid fa-arrow-trend-up"></i>New</h3>
+                        </div>
+                        <div class="right-icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </div>
+                        <img src="images/curve-tv.jpg" alt="Monitor">
+                        <p>27" 4K Curved Gaming Monitor</p>
+                        <i class="fa-solid fa-star"></i>
+                        <p class="pay">$249.99 <span>$749.99</span></p>
+                        <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                    </div>
+
+                    <div class="card-box">
+                        <div class="left-icons">
+                            <h3 class="pers">-55%</h3>
+                            <h3 class="new"><i class="fa-solid fa-arrow-trend-up"></i>New</h3>
+                        </div>
+                        <div class="right-icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </div>
+                        <img src="images/drone.webp" alt="Drone">
+                        <p>4K Camera Drone with GPS Tracking</p>
+                        <i class="fa-solid fa-star"></i>
+                        <p class="pay">$179.99 <span>$399.99</span></p>
+                        <button type="submit" id="btn"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+                    </div>
+                </div>
+            </div>
 
 
 
