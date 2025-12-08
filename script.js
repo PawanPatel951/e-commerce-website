@@ -19,7 +19,7 @@ document.querySelector('.search-btn').onclick = function(e) {
   searchBox.classList.toggle('active');
   
   if (searchBox.classList.contains('active')) {
-    document.querySelector('.search-box input').focus(); // CURSOR BLINKS
+    document.querySelector('.search-box input').focus(); 
   }
 }
 
