@@ -13,6 +13,17 @@ const menuBtn = document.querySelector(".menu-btn");
     };
 
 
+document.querySelector('.search-btn').onclick = function(e) {
+  e.preventDefault();
+  const searchBox = document.querySelector('.search-box');
+  searchBox.classList.toggle('active');
+  
+  if (searchBox.classList.contains('active')) {
+    document.querySelector('.search-box input').focus(); // CURSOR BLINKS
+  }
+}
+
+
 let slideIndex = 0;
 let slides = document.querySelectorAll(".slide");
 let dotsContainer = document.querySelector(".dots");
@@ -49,7 +60,7 @@ function goToSlide(n) {
     showSlide(slideIndex);
 }
 
-/* Auto Slide */
+
 setInterval(() => {
     nextSlide();
-}, 3000); // 3 seconds
+}, 3000); 
