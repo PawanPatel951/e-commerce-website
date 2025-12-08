@@ -109,12 +109,13 @@ header {
 
 .search-box {
   position: relative;
-  width: 550px;
+  width: 100%;
+  
 }
 
 .search-box input {
   width: 100%;
-  padding: 11px 45px 11px 18px;
+  padding: 11px 435px 11px 18px;
   border-radius: 10px;
   border: 1px solid #ccc;
   font-size: 16px;
@@ -215,39 +216,57 @@ header {
 }
 
 @media (max-width: 480px) {
+  .mid-containt {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #999;
+
+}
+
+.mid-text {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
   #bg-c {
     width: 30px;
     height: 28px;
     font-size: 10px;
+    margin-left: 10px;
   }
 
   .mid-text h4 {
     font-size: 16px;
-    margin-left: -10px;
+    margin-left: 5px;
+    margin-right: 40px;
   }
 
-  .search-box {
+  .mid-text .search-box {
     width: 100%; 
-    overflow: hidden;
     transition: all 0.3s ease;
-    position: relative;
-    
-    
+    position: absolute;
+    right: 0px; 
+    left: 140px;   
   }
   
   .search-box.active {
-    width: 90% !important; 
-    margin: 10px 0; 
+    width: 100% !important; 
   }
   
   .search-box input {
-    padding: 10px 40px 10px 15px !important;
+     padding: 11px 10px 11px 18px !important;
+     overflow: hidden;
+     
     font-size: 10px;
-    width:420px;
+    width: 100%;
   }
   
   .search-box.active input {
-    padding: 12px 45px 12px 18px !important;
+    padding: 11px 100px 11px 18px !important;
   }
 
   .search-box .search-btn {
@@ -256,6 +275,11 @@ header {
     right: 0px;
     margin: 0 4px;
   }
+  .search-box input:focus {
+  border-color: blue;
+  outline: none;
+    padding: 11px 100px 11px 18px !important;
+}
 
 
 
@@ -271,7 +295,7 @@ header {
 nav {
   width: 100%;
   backdrop-filter: blur(45px);
-  padding: 12px 40px;
+  padding: 12px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -377,7 +401,7 @@ nav {
     display: none;
   }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
   nav {
     padding-left: 20px;
@@ -472,6 +496,16 @@ nav {
     display: none;
   }
 }
+
+
+@media (min-width: 600px) and (max-width: 1240px) {
+  nav {
+    width: 100%;
+    padding: 12px 60px;
+    font-size: 7px;
+  }
+}
+
 
 @media (max-width: 480px) {
   
@@ -943,6 +977,28 @@ footer .footer-about {
   .Category .Category-itmes {
     gap: 18px;
   }
+  .Category .Category-itmes .box {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .Category {
+    width: 92%;
+
+  }
+
+  .Category .Category-itmes {
+    gap: 18px;
+  }
+   .Category .Category-itmes .box {
+    width: 60px;
+    height: 60px;
+  }
+  .Category .Category-itmes .box h3 {
+  font-size: 8px;
+  margin-top: 5px;
+}
 }
 
 
